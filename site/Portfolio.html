@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/combined.css">
+
+    <!-- jQuery JS 3.1.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <title>Ultimate Logo</title>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+         <div class="header">
+            <div class="container">
+                <div class="header_left">
+                    <div class="logo">
+                          <a href="index.php"><img src="images/logo.png" alt="logoultimate" /></a>
+                    </div>
+                </div>
+                  <div class="header_right">
+                    <div class="head_top">
+                        <ul>
+                            <li>
+                                <a href="logoultimate.html"><i class="fa fa-user" aria-hidden="true"></i> My Account</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i> Toll Free (123) 456 7890
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> support@logoultimate.com
+                            </li>
+                            <li>
+                                <i class="fa fa-commenting-o" aria-hidden="true"></i> Live Chat
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="index.php">Logo Design</a></li>
+                            <li><a href="Webdesign.html">Web Design</a></li>
+                            <li><a href="#">Brochure Design</a></li>
+                            <li><a href="videoVoice.html">Video &amp; Voice Over</a></li>
+                            <li><a href="appdev.html">App Development</a></li>
+                            <li><a href="Portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="s_form_toggle">
+                <div class="toggle_icon">
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                </div>
+                <div class="toggle_txt">
+                    ACTIVATE YOUR LOGO COUPON
+                </div>
+            </div>
+            <div class="signup_form_box">
+                <div class="signup_head">
+                    SIGN UP NOW &amp; <br /> RESERVE YOUR DISCOUNT
+                </div>
+                <div class="clear"></div>
+                <form action="Actions/PerData.php" method="POST">
+                    <!--Form-->
+                    <div class="signup_form">
+                        <div class="signup_form_grp">
+                            <div class="signup_form_field">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" name="cn" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="signup_form_grp">
+                            <div class="signup_form_field">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <input type="text" name="em" placeholder="Email Address">
+                            </div>
+                        </div>
+
+                        <div class="signup_form_grp">
+                            <div class="signup_form_field">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                <input type="text" name="pn" placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <div class="signup_form_grp">
+                            <div class="signup_form_field">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <textarea type="text" rows="5" name="msg" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="signup_form_grp">
+                            <div class="signup_form_btn">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="tp-banner-container">
+                <div class="tp-banner">
+                    <ul>
+                        <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1500">
+                            <div class="fluid-ratio-resize imgBanner"></div>
+                        </li>
+                        <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000">
+                            <div class="fluid-ratio-resize imgBanner2"></div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var revapi;
+            revapi = jQuery('.tp-banner').revolution({
+                autoPlay: false,
+                delay: 9000,
+                startwidth: 1170,
+                startheight: 546,
+                hideThumbs: 2,
+                fullWidth: "on",
+                forceFullWidth: "on",
+                //fullScreen:"on",
+                //fullScreenOffsetContainer: "#header, #footer"
+            });
+        </script>
+
+        <div class="container">
+            <div class="row webDesign">
+                <h4>PORTFOLIO</h4>
+                    <article class="contentArea">
+                        <section class="wrap portfolio single">
+                            <p class="center">
+                                <!--<a href="javascript:showPortfolio('portfolio-all')" id="portfolio-sample-text" class="portfolio-text">All</a>-->
+                                <a href="javascript:;" id="portfolio-logo-text" onclick="Views('logo')" class="ptext portfolio-text-on" rel="plogo">LOGO DESIGN</a>
+                                <a href="javascript:;" id="portfolio-corporate-text" class="ptext" onclick="Views('cidentity')" rel="pcorp">CORPORATE IDENTITY</a>
+                                <a href="javascript:;" id="portfolio-website-text" class="ptext" onclick="Views('web')" rel="pwebsite">WEBSITE</a>
+                                <a href="javascript:;" id="portfolio-video-text" class="ptext" onclick="Views('video')" rel="pvideo">VIDEOS</a>
+                            </p>
+                            <div class="portfolio-container" style="">
+                            <div class="slab-portfolio-item plogo text-center" id="portfolio-logo" style="width: 100%; display: block;">
+                                <div class="logolist">
+                                    
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/1.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/2.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/3.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/4.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/5.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/6.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/7.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/8.jpg"></div>
+                                    <div class="w360" style="display: inline-block;"><img src="images/logo/9.jpg"></div>
+                                    <div class="w360"><img src="images/logo/10.jpg"></div>
+                                    <div class="w360"><img src="images/logo/11.jpg"></div>
+                                    <div class="w360"><img src="images/logo/12.jpg"></div>
+                                    <div class="w360"><img src="images/logo/13.jpg"></div>
+                                    <div class="w360"><img src="images/logo/14.jpg"></div>
+                                    <div class="w360"><img src="images/logo/15.jpg"></div>
+                                    <div class="w360"><img src="images/logo/16.jpg"></div>
+                                    <div class="w360"><img src="images/logo/17.jpg"></div>
+                                    <div class="w360"><img src="images/logo/18.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/19.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/20.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/21.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/22.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/23.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/24.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/25.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/26.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/27.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/28.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/29.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/30.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/31.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/32.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/33.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/34.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/35.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/36.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/37.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/38.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/39.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/40.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/41.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/42.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/43.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/44.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/45.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/46.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/47.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/48.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/49.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/50.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/51.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/52.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/53.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/54.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/55.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/56.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/57.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/58.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/59.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/60.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/61.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/62.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/63.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/64.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/65.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/66.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/67.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/68.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/69.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/70.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/71.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/72.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/73.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/74.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/75.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/76.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/77.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/78.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/79.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/80.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/81.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/82.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/83.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/84.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/85.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/86.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/89.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/90.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/91.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/92.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/93.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/98.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/99.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/100.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/101.jpg"></div>
+                                    <div class="w360"><img src="images/logo/big/102.jpg"></div>
+
+                                </div>
+                                <div class="clr"></div>
+                                <div class="btn-load-more" id="loadMore">LOAD MORE<span><img src="images/arrow-down.png"></span></div>
+                            </div>
+                            <div class="slab-portfolio-item pcorp text-center" id="portfolio-corporate" style="width: 100%; display: none;">
+                                
+                                <div>
+                                    <h2>jennifer knight &amp; regina sorace</h2>
+                                    <h3>Stationery Design</h3>
+                                    <img src="images/corp/01.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2>tooth care dentistry</h2>
+                                    <h3>corporate identity</h3>
+                                    <img src="images/corp/02.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2>loud fruit</h2>
+                                    <h3>corporate identity</h3>
+                                    <img src="images/corp/03.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2>reflige youth</h2>
+                                    <h3>corporate identity</h3>
+                                    <img src="images/corp/04.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2>Redix</h2>
+                                    <h3>complete brand identity</h3>
+                                    <img src="images/corp/05.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2>carsourceusa.com</h2>
+                                    <h3>complete identity</h3>
+                                    <img src="images/corp/06.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2>living hope</h2>
+                                    <h3>Brochure</h3>
+                                    <img src="images/corp/07.jpg">
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            <div class="slab-portfolio-item pwebsite text-center" id="portfolio-website" style="width: 100%; display: none;">
+                                <div>
+                                    <h2><span>VIZIO</span> / ONLINE E COMMERCE STORE</h2>
+                                    <h3>WORDPRESS, WOO COMMERCE, OPEN CART</h3>
+                                    <img src="images/website/webfolio/01.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>AMERICA REAL ESTATE</span></h2>
+                                    <h3>REAL ESTATE WEBSITET</h3>
+                                    <img src="images/website/webfolio/02.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>FITNESS CLUB</span></h2>
+                                    <h3>REDESIGN &amp; DEVELOPMENT</h3>
+                                    <img src="images/website/webfolio/03.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>SMAK ARCHITECTS</span></h2>
+                                    <h3>DESIGN, DEVELOPMENT &amp; CONTENT MANAGEMENT SYSTEM</h3>
+                                    <img src="images/website/webfolio/04.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>CHEF ROBINSSON</span> / VIDEO &amp; DOCUMENT GALLERY</h2>
+                                    <h3>CONTENT MANAGEMENT SYSTEM</h3>
+                                    <img src="images/website/webfolio/05.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>KAIROS</span></h2>
+                                    <h3>DESIGN &amp; DEVELOPMENT</h3>
+                                    <img src="images/website/webfolio/06.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>G&amp;G </span> /  SECURE TRANPORT</h2>
+                                    <h3>DESIGN &amp; DEVELOPMENT</h3>
+                                    <img src="images/website/webfolio/07.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>HYATT SPAS</span> / SANIAS PER AQUAS</h2>
+                                    <h3>DESIGN, DEVELOPMENT &amp; CONTENT MANAGEMENT SYSTEM</h3>
+                                    <img src="images/website/webfolio/08.jpg">
+                                </div>
+                                
+                                <div>
+                                    <h2><span>MEGA STOR</span> / ONLINE ECOMMERCE STORE</h2>
+                                    <h3>WORDPRESS, WOO COMMERCE, OPENCART</h3>
+                                    <img src="images/website/webfolio/09.jpg">
+                                </div>
+                                
+                                
+                            
+                            </div>
+                            
+                            <div class="slab-portfolio-item pvideo text-center" id="portfolio-video" style="width: 100%; display: none;">
+                                <div>
+                                    <h2>Company Name Here</h2>
+                                    <h3>Video TItle Here</h3>
+                                    <div class="video-bg">
+                                        <!--<iframe width="870" height="495" src="https://www.youtube.com/embed/lQjWdKwE6zw?vq=hd720" frameborder="0" allowfullscreen="" __idm_id__="613070849"></iframe>-->
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h2>Company Name Here</h2>
+                                    <h3>Video TItle Here</h3>
+                                    <div class="video-bg">
+                                        <!--<iframe width="870" height="495" src="https://www.youtube.com/embed/EOxDyxLIcFQ?vq=hd720" frameborder="0" allowfullscreen=""></iframe>-->
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h2>Company Name Here</h2>
+                                    <h3>Video TItle Here</h3>
+                                    <div class="video-bg">
+                                        <!--<iframe width="870" height="495" src="https://www.youtube.com/embed/VqWPwbiyz9I?vq=hd720" frameborder="0" allowfullscreen=""></iframe>-->
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h2>Company Name Here</h2>
+                                    <h3>Video TItle Here</h3>
+                                    <div class="video-bg">
+                                        <!--<iframe width="870" height="495" src="https://www.youtube.com/embed/E78vG2xLPec?vq=hd720" frameborder="0" allowfullscreen=""></iframe>-->
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h2>Company Name Here</h2>
+                                    <h3>Video TItle Here</h3>
+                                    <div class="video-bg">
+                                        <!--<iframe width="870" height="495" src="https://www.youtube.com/embed/3lagvXo3y-w?vq=hd720" frameborder="0" allowfullscreen=""></iframe>-->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </section>
+                    </article>
+
+            </div>
+        </div>
+
+<div class="clear"></div>
+ <div class="footer takemartop20">
+            <div class="footer-container">
+
+                <div class="footer-left">
+                    <div class="footer-logo"><img alt="Pixel Logo Design" src="images/logo.png" width="150" height="65" /></div>
+                    <div class="footer-contact">
+                        <span class="email"><span></span>Email: ultimate@godaddylogos.com</span>
+                        <span class="phone"><span></span>Phone: &nbsp; <img src="images/pixelfootercall.jpg"></span>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" target="_blank" class="facebook">Facebook</a>
+                        <a href="#" target="_blank" class="youtube">Youtube</a>
+                        <a href="#" target="_blank" class="twitter">Twitter</a>
+                        <a href="#" target="_blank" class="linkedin">Linkedin</a>
+                        <a href="#" class="google" target="_blank">Linkedin</a>
+                    </div>
+
+                </div>
+                <div class="footer-right">
+                    <div class="footer-menu">
+                        <h4>Services</h4>
+                        <div class="menu-footer-menu-container">
+                            <ul id="menu-footer-menu" class="menu">
+                                <li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"><a href="index.php">Logo Design</a></li>
+                                <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78"><a href="videoVoice.html">Animated Videos</a></li>
+                                <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79"><a href="#">Stationery Design</a></li>
+                                <li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="#">Promo Items</a></li>
+                                <li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82"><a href="Webdesign.html">Web Design</a></li>
+                                <li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="#">App &#038; Games</a></li>
+                                <li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84"><a href="#">Brochure Design</a></li>
+                                <li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85"><a href="#">Banner Design</a></li>
+                                <li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="#">Animated Logo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu">
+                        <h4>More Links</h4>
+                        <div class="menu-more-links-container">
+                            <ul id="menu-more-links" class="menu">
+                                <li id="menu-item-1122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="#">About Us</a></li>
+                                <li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="#">Our Guarantees</a></li>
+                                <li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a href="#">Reviews</a></li>
+                                <li id="menu-item-1157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1157"><a href="#">In The Media</a></li>
+                                <li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="Portfolio.html">Portfolio</a></li>
+                                <li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92"><a href="#">Our Blog</a></li>
+                                <li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93"><a href="#">Sitemap</a></li>
+                                <li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a href="#">Privacy &#038; Security</a></li>
+                                <li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="contus.html">Contact Us</a></li>
+                                <li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="TermsCond.html">Terms of Use</a></li>
+                                <li id="menu-item-823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-823"><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copy_rights">
+            <div class="container">
+                <p>&copy; Copyright 2016, Logo Ultimate All Right Reserved.</p>
+            </div>
+        </div>
+
+
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="https://use.fontawesome.com/7525bc10d1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.s_form_toggle').click(function() {
+                    $('.signup_form_box').toggleClass('active');
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var logo_slider = $("#owl-demo");
+                logo_slider.owlCarousel({
+                    autoPlay: 3000,
+                    items: 4,
+                    itemsDesktop: [1199, 3],
+                    itemsDesktopSmall: [979, 3],
+                    pagination: false
+                });
+
+
+
+                $(".next").click(function() {
+                    logo_slider.trigger('owl.next');
+                });
+                $(".prev").click(function() {
+                    logo_slider.trigger('owl.prev');
+                });
+
+                var testi_slider = $("#testimonials");
+                testi_slider.owlCarousel({
+                    autoPlay: 3000,
+                    items: 1,
+                    itemsDesktop: [1199, 3],
+                    itemsDesktopSmall: [979, 3],
+                    pagination: false
+                });
+
+                $(".testi_next").click(function() {
+                    testi_slider.trigger('owl.next');
+                });
+                $(".testi_prev").click(function() {
+                    testi_slider.trigger('owl.prev');
+                });
+
+                jQuery('.skillbar').each(function() {
+                    jQuery(this).appear(function() {
+                        jQuery(this).find('.count-bar').animate({
+                            width: jQuery(this).attr('data-percent')
+                        }, 2000);
+                        var percent = jQuery(this).attr('data-percent');
+                        jQuery(this).find('.skillbar_percent').html('<span>' + percent + '</span>');
+                    });
+                });
+
+            });
+
+            $(window).scroll(function(event) {
+                var windowheight = $(window).height();
+                //alert(windowheight);
+                var scroll = $(window).scrollTop();
+                if (scroll >= windowheight) {
+                    $('.fixed_header').css({
+                        "visibility": "visible",
+                        "opacity": "1"
+                    });
+                } else {
+                    $('.fixed_header').css({
+                        "visibility": "hidden",
+                        "opacity": "0"
+                    });
+                }
+            });
+        </script>
+
+        <script src="js/xlib.js"></script>
+
+        <script src="https://use.fontawesome.com/7525bc10d1.js"></script>
+
+    </div>
+</body>
+</html>
+
